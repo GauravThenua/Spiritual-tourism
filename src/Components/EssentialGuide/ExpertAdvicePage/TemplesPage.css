@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+
+
+.ExpertPage-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #5236f3;
+}
+
+.Temple-expert-page-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    font-size: 30px;
+    line-height: 2rem;
+    font-weight: 600;
+    background-color: #5236f3;
+    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 0px;
+}
+
+@media(max-width: 1005px){
+
+    
+    .ExpertPage-container{
+        padding-top: 20px;
+    }
+
+    .expert-page-heading{
+        padding-top: 30px;
+        padding-bottom: 20px;
+        font-size: 1.4rem;
+    }
+}

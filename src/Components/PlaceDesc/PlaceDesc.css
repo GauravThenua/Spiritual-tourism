@@ -1,0 +1,104 @@
+.City-Box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  background-color: #5236f3;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 0px;
+  padding-bottom: 80px;
+  /* background: url('https://rishikeshdaytour.com/blog/wp-content/uploads/2023/09/top10-places-to-visit-in-Ayodhya.jpg') no-repeat center/cover; */
+}
+
+.cityDesc-Heading{
+  display: flex;
+  flex-direction: column;
+  justify-self: start;
+  align-items: start;
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 40px 0px 0px 20px;
+}
+
+.city-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+
+.city-Button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #fac4448f;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+}
+
+.city-Button:hover {
+  color: black;
+  background-color: #f18e1d;
+  border-radius: 10px;
+}
+
+
+.Best-Places{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 30px 20px 30px 20px;
+  border-radius: 10px;
+}
+
+/* Hide the scrollbar for WebKit browsers */
+.Best-Places{
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: transparent transparent; /* For Firefox */
+}
+
+.Best-Places::-webkit-scrollbar {
+    width: 0 !important;
+    background-color: transparent; /* Optional: Set a transparent background color */
+}
+
+
+
+
+
+@media(max-width: 1005px){
+
+  .City-Box{
+    padding: 20px;
+    padding-bottom: 50px;
+  }
+  .city-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: black;
+  border-radius: 20px;
+}
+
+.cityDesc-Heading{
+  position: relative;
+  top: 30px;
+  font-size: 20px;
+  padding: 0px;
+  justify-content: start;
+  margin-bottom: 30px;
+  margin-right: 25px;
+}
+
+.Best-Places{
+  border-radius: 20px;
+}
+
+}

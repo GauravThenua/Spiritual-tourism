@@ -1,0 +1,44 @@
+.expert-page-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Josefin Sans", sans-serif;
+    background-color: #5236f3;
+}
+
+
+.ExpertPage-containers{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    background-color: #5236f3;
+}
+
+.expert-page-heading{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #5236f3;
+    position: relative;
+    top: 30px;
+    padding: 40px;
+}
+
+@media(max-width: 1005px){
+    .ExpertPage-container{
+        padding-top: 20px;
+    }
+
+    .expert-page-heading{
+        position: relative;
+        padding: 20px;
+        font-size: 1.4rem;
+    }
+}

@@ -1,0 +1,111 @@
+.Welcome-Page{
+    /* background-color:  rgba(255, 173, 21, 0.467); */
+    /* padding: 20px; */
+}
+
+
+.Intro-Container {
+    position: relative;
+    font-family: "Lato", sans-serif;
+    font-weight: bolder;
+    overflow: hidden;
+}
+
+.Intro-Container img {
+    height: 100%;
+    width: 100%;
+    
+    /* border-radius: 10px; */
+}
+
+
+.Content-Overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    text-align: start;
+    color: white;
+}
+
+.Content-Overlay h1 {
+    font-weight: bolder;
+    font-size: 5em;
+    margin-bottom: 10px;
+}
+
+.OverLays-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    gap: 10px;
+    font-size: 18px;
+    position: relative;
+    top: 30px;
+}
+
+.OverLays-box span{
+    padding: 15px;
+    background-color: var(--root-color);
+    color: inherit;
+    border-radius: 0px 8px 8px 8px;
+    transition: ease-in-out 0.2s;
+}
+
+.OverLays-box span:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+
+
+@media(max-width: 1005px){
+    
+    .Welcome-Page{
+        padding: 0px;
+    }
+
+    .Intro-Container img{
+        height: 435px;
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .Content-Overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    top: 47%;
+    left: 39%;
+    min-width: 200px;
+}
+
+.Content-Overlay h1 {
+    font-size: 2em;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+
+    .OverLays-box{
+        align-items: start;
+        font-size: 10px;
+        justify-content: start;
+        flex-direction: column;
+        /* margin-bottom: 30px; */
+    }
+
+    .OverLays-box span{
+    min-width: 200px;
+    padding: 12px;
+    background-color: rgba(255, 173, 21, 0.721);
+    position: relative;
+    bottom: 20px;
+}
+}

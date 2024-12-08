@@ -1,0 +1,89 @@
+.Explore-Card {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    font-family: "Lato", sans-serif;
+    border-radius: 12px;
+}
+
+
+
+.Explore-Img {
+    position: relative; /* Ensure relative positioning for the overlay */
+    border-radius: 10px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.Overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Black color with 0.4 opacity */
+    border-radius: 10px;
+    transition: opacity 0.2s ease-in-out; /* Optional: add transition effect */
+    pointer-events: none; /* Ensure clicks can still pass through to the image */
+    z-index: 1; /* Ensure the overlay is above the image */
+}
+
+.Explore-Img:hover .Overlay {
+    opacity: 1; /* Show the overlay on hover */
+}
+
+.Explore-Img img {
+    border-radius: 10px;
+    transition: ease-in-out 0.2s;
+}
+
+.Explore-Card:hover .Explore-Img img {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.EContent {
+    width: auto;
+}
+
+.Explore-Img {
+    border-radius: 10px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.Explore-Content {
+    padding: 10px 0px 10px 0px;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    position: relative;
+}
+
+.Explore-Content::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px; /* Adjust the thickness of the underline */
+    background-color: currentColor; /* Use the text color for the underline */
+    transform-origin: left;
+    transform: scaleX(0); /* Initial state: no underline */
+    transition: transform 0.3s ease; /* Adjust the duration and easing */
+    color: rgb(246, 246, 246);
+}
+
+.Explore-Content:hover::before {
+    transform-origin: left;
+    transform: scaleX(1); /* On hover, scale the underline to full width */
+}
+
+@media(max-width: 1005px){
+    .Explore-Content {
+        font-size: 13px;
+    }
+
+    .EContent{
+       max-width: 140px;
+    }
+}

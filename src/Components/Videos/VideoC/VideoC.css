@@ -1,0 +1,84 @@
+.video-Box {
+  position: relative;
+  top: 0px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 10px;
+  max-width: 400px;
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+}
+
+.video {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.video img{
+    height: 220px;
+    width: 350px;
+    transition: ease-in-out 0.26s;
+}
+
+.video:hover img{
+    transform: scale(1.1);
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 20px;
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.video-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.video-modal {
+  position: relative;
+  z-index: 1010;
+}
+
+
+.video-title{
+  font-size: 1.8rem;
+  font-weight: bolder;
+}
+
+.video-about{
+  font-size: 1.3rem;
+  font-weight: bold;
+  opacity: .7;
+}
+
+@media(max-width: 1005px){
+  .video-title{
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+
+.video-about{
+  font-size: 1.0rem;
+  font-weight: bold;
+}
+}

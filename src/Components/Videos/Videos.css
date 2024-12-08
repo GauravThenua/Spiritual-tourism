@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+.Video-Container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 0px;
+    background-color: #bdbdbdad;
+    padding: 20px 20px 20px 20px;
+    font-family: "Josefin Sans", sans-serif;
+    font-style: normal;
+}
+
+.Video-Head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 0 40px 0 40px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.Video-Head h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.Video-Head span{
+    font-size: 1.8rem;
+    align-items: center;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 0px;
+    opacity: .6;
+    font-weight: bold;
+}
+
+.Videos-Body{
+    font-style: normal;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0px;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.Video-Fotter{
+    font-style: normal;
+    justify-content: start;
+    align-items: start;
+    font-size: 14px;
+    font-weight: bold;
+    opacity: 0.7;
+    position: relative;
+    left: 65px;
+}
+
+
+@media(max-width: 1005px){
+    .Video-Head{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: start;
+    align-items: start;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    width: auto;
+    padding: 2px;
+}
+
+.Video-Head span{
+    font-size: 1.2rem;
+    align-items: start;
+    text-align: start;
+    font-weight: 400;
+    margin-bottom: 0px;
+    opacity: .6;
+    font-weight: bold;
+}
+    .Video-Fotter{
+        left: 0px;
+    }
+
+}

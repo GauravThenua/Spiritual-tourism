@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+.navbar-1 {
+    position: fixed; /* Fixes the navbar to the top of the viewport */
+    top: 0; /* Ensures it stays at the top */
+    width: 100%; /* Makes the navbar span the full width of the screen */
+    background-color: rgba(255, 255, 255, 0.721); /* Semi-transparent white background */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 25px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.932); /* Adds a shadow */
+    transition: ease-in-out 0.5s; /* Smooth transitions for any style changes */
+    z-index: 1000; /* Ensures it appears above other elements */
+}
+
+
+.nav-1{
+    /* opacity: 0; */
+}
+
+/* .expanded{
+    height: 200px;
+    background-color: rgba(36, 36, 38, 0.703);
+    transition: ease-in-out 0.5s;
+    display: flex;
+    flex-direction: column;
+} */
+
+.symbol{
+    font-family: "Yatra One", system-ui;
+    font-size: 25px;
+    font-weight: bolder;
+    color: #f19c26; 
+}
+
+
+.navLinks{
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 17px;
+    font-family: "Lato", sans-serif;
+    color: inherit;
+    font-weight: dark;
+}
+
+.navLinks a {
+    transition: background-color 0.2s ease-in-out; /* Updated transition property */
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+}
+
+.navLinks a:hover {
+    background-color: rgba(182, 181, 181, 0.72);
+    cursor: pointer;
+}
+
+
+
+
+@media(max-width: 1150px){
+  .navbar-1{
+    justify-content: space-around;
+    padding: 25px 60px 25px 10px;
+    align-items: start;
+    overflow-y: hidden;
+  }
+
+  .toggle img{
+    position: relative;
+    left: 40px;
+    color: red;
+  }
+}

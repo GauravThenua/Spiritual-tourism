@@ -1,0 +1,106 @@
+.Fotter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 140px 20px 40px 20px;
+    background-color: #5236f3;
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.Fotter-Head ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.Fotter-Head ul li {
+  list-style: none;
+  font-size: 20px;
+  position: relative;
+  overflow: hidden; /* Hide the overflow to contain the growing underline */
+}
+
+.Fotter-Head ul li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px; /* Adjust the thickness of the underline */
+  background-color: #ffffff; /* Adjust the color of the underline */
+  transition: width 0.3s ease; /* Adjust the transition duration and easing */
+}
+
+.Fotter-Head ul li:hover::after {
+  width: 100%;
+}
+
+
+.Fotter-body h1{
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 80px;
+    letter-spacing: 10px;
+    font-weight: 1000;
+}
+
+    .rights{
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 0.7;
+    position: relative;
+}
+
+li:hover{
+  cursor: pointer;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  opacity: 1;
+}
+a:hover{
+  opacity: 1;
+}
+
+@media(max-width: 1005px){
+
+
+    .Fotter{
+        padding: 50px 20px 40px 20px;
+        justify-content: start;
+        align-items: start;
+        gap: 15px;
+    }
+
+    .Fotter-Head ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 20px;
+        padding: 0px;
+    }
+
+    .Fotter-body h1{
+        padding: 0px;
+        font-size: 40px;
+    }
+
+    .rights{
+    justify-content: start;
+    align-items: start;
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 0.7;
+}
+
+}

@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap');
+
+.Navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    padding: 0 20px;
+    color: white;
+    height: 150px;
+    background: url('../Navigation/Flow.png') no-repeat center center/cover;
+    background-image: size(.6);
+}
+
+.Navigation div {
+    position: relative;
+    padding: 30px 10px 0px 10px;
+    font-size: 2rem;
+    font-family: "Signika Negative", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    transition: .2s ease-in-out;
+    left: 60px;
+    bottom: 20px;
+}
+
+.Navigation div::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: transparent;
+    transition: width 0.3s ease; 
+}
+
+.Navigation div:hover::after {
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.Navigation div:hover {
+    cursor: pointer;
+}
